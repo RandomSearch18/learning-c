@@ -8,7 +8,7 @@ int main() {
     return 1;
   }
 
-  int* arr = malloc(sizeof(int) * n);
+  int arr[n];
 
   printf("Enter %d numbers:\n", n);
   for (int i = 0; i < n; i++) {
@@ -26,6 +26,5 @@ int main() {
   float avg = (float)sum / n;
   printf("Average: %f\n", avg);
 
-  free(arr);
   return 0;
 }
